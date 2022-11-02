@@ -13,7 +13,6 @@ switch (first)
    break; 
 }
 
-
 Console.WriteLine("Did you participated the second exam? ");
 string second = Console.ReadLine()!;
 
@@ -25,7 +24,6 @@ switch (second)
    possiblePoints+=20;
    break; 
 }
-
 
 Console.WriteLine("Have you done an oral exam? ");
 string oral = Console.ReadLine()!;
@@ -39,14 +37,11 @@ switch (oral)
    break; 
 }
 
-
 Console.WriteLine("How many points did you get for your homework(0-20)? ");
 double pointsHomework = double.Parse(Console.ReadLine()!);
 possiblePoints += 20;
 
 double percentage = points/ possiblePoints * 100;
-
-
 if (percentage < 50)
 {
     Console.WriteLine("Your grade is: 5");
@@ -72,9 +67,7 @@ else if (percentage >= 89)
    Console.WriteLine("Your grade is: 1");
 }
 
-
 double percentageHomework = (points + 20)/ possiblePoints * 100;
-
 if (percentageHomework < 50)
 {
     Console.WriteLine("Your grade is: 5");
@@ -99,7 +92,6 @@ else if (percentageHomework >= 89)
 {
    Console.WriteLine("Your grade is: 1");
 }
-
 
 if (percentageHomework > percentage)
 {
